@@ -1,0 +1,8 @@
+2025-01-23 20:18:47.155 [info] Started local extension host with pid 107262.
+2025-01-23 20:18:49.792 [info] [perf] Render performance baseline is 23ms
+2025-01-23 20:18:52.539 [error] Timed out waiting for authentication provider to register
+2025-01-23 20:19:31.231 [error] [Extension Host] (node:107262) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-01-23 20:20:09.801 [info] Started local extension host with pid 107718.
+2025-01-23 20:20:12.425 [info] [perf] Render performance baseline is 32ms
+2025-01-23 20:20:15.210 [error] Timed out waiting for authentication provider to register

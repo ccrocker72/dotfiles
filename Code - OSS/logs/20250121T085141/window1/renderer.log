@@ -1,0 +1,5 @@
+2025-01-21 08:51:43.188 [info] Started local extension host with pid 27051.
+2025-01-21 08:51:43.212 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ccrocker/.vscode-oss/extensions
+2025-01-21 08:51:43.332 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ccrocker/.vscode-oss/extensions
+2025-01-21 08:51:46.124 [info] [perf] Render performance baseline is 24ms
+2025-01-21 08:51:48.670 [error] Timed out waiting for authentication provider to register

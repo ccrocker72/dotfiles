@@ -1,0 +1,267 @@
+
+# 2025-01-22 09:21:48.635702
++\dt
+
+# 2025-01-22 09:25:57.460630
++exit
+
+# 2025-01-22 09:27:31.175377
++\dt
+
+# 2025-01-23 09:41:27.799009
++exit
+
+# 2025-01-25 12:49:11.109690
++\dt
+
+# 2025-01-25 13:29:38.152629
++select * from green_taxi_data
+
+# 2025-01-25 13:30:50.348072
++select COUNT(*) from green_taxi_data
+
+# 2025-01-25 13:31:10.261029
++delete * from green_taxi_data
+
+# 2025-01-25 13:31:25.337322
++delete from green_taxi_data
+
+# 2025-01-25 13:32:11.971015
++\dt
+
+# 2025-01-25 13:32:23.218354
++delete from yellow_taxi_data
+
+# 2025-01-25 13:32:28.171229
++\dt
+
+# 2025-01-25 13:32:34.461785
++drop yellow_taxi_data
+
+# 2025-01-25 13:32:41.434430
++drop table yellow_taxi_data
+
+# 2025-01-25 13:32:45.037244
++\dt
+
+# 2025-01-25 13:32:53.986766
++select count(*) from green_taxi_data
+
+# 2025-01-25 13:36:32.236608
++\dt
+
+# 2025-01-25 13:37:27.198962
++select * from green_taxi_data limit 5
+
+# 2025-01-25 13:40:02.357176
++select count(1) FROM green_taxi_data where trip_distance <= 1
+
+# 2025-01-25 13:40:13.490567
++select count(1) FROM green_taxi_data where trip_distance < 1
+
+# 2025-01-25 13:42:19.590331
++select count(1) FROM green_taxi_data where lpep_dropoff_datetime BETWEEN make_date(2019, 10, 1) and make_date(2019, 11, 1) and trip_distance < 1
+
+# 2025-01-25 13:42:31.584651
++select count(1) FROM green_taxi_data where lpep_dropoff_datetime BETWEEN make_date(2019, 10, 1) and make_date(2019, 11, 1) and trip_distance <= 1
+
+# 2025-01-25 13:43:53.011544
++select count(1) FROM green_taxi_data where lpep_dropoff_datetime >= make_date(2019, 10, 1) and lpep_drop_datetime < make_date(2019, 11, 1) and trip_distance <= 1
+
+# 2025-01-25 13:44:01.748079
++select count(1) FROM green_taxi_data where lpep_dropoff_datetime >= make_date(2019, 10, 1) and lpep_dropoff_datetime < make_date(2019, 11, 1) and trip_distance <= 1
+
+# 2025-01-25 13:44:30.472588
++select count(1) FROM green_taxi_data where lpep_dropoff_datetime >= make_date(2019, 10, 1) and lpep_dropoff_datetime < make_date(2019, 11, 1) and trip_distance > 1 and trip_distance <= 3
+
+# 2025-01-25 13:46:56.149278
++with daily_trip_distance AS (select sum(trip_distance) from green_taxi_data group by DAY(lpep_pickup_datetime), MONTH(lpep_pickup_datetime), YEAR(lpep_pickup_datetime)) select * from daily_trip_distance
+
+# 2025-01-25 13:47:49.551660
++with daily_trip_distance AS (select sum(trip_distance) from green_taxi_data group by EXTRACT(DAY FROM lpep_pickup_datetime), EXTRACT(MONTH FROM lpep_pickup_datetime), EXTRACT(YEAR FROM lpep_pickup_datetime)) select * from daily_trip_distance
+
+# 2025-01-25 13:49:08.195665
++with daily_trip_distance AS (select EXTRACT(DAY FROM lpep_pickup_datetime), EXTRACT(MONTH FROM lpep_pickup_datetime), EXTRACT(YEAR FROM lpep_pickup_datetime), sum(trip_distance) as daily_trip_distance from green_taxi_data group by EXTRACT(DAY FROM lpep_pickup_datetime), EXTRACT(MONTH FROM lpep_pickup_datetime), EXTRACT(YEAR FROM lpep_pickup_datetime)) select * from daily_trip_distance order by daily_trip_distance DESC
+
+# 2025-01-25 13:49:13.550265
++with daily_trip_distance AS (select EXTRACT(DAY FROM lpep_pickup_datetime), EXTRACT(MONTH FROM lpep_pickup_datetime), EXTRACT(YEAR FROM lpep_pickup_datetime), sum(trip_distance) as daily_trip_distance from green_taxi_data group by EXTRACT(DAY FROM lpep_pickup_datetime), EXTRACT(MONTH FROM lpep_pickup_datetime), EXTRACT(YEAR FROM lpep_pickup_datetime)) select * from daily_trip_distance order by daily_trip_distance DESC limit 1
+
+# 2025-01-25 13:50:53.659376
++with daily_trip_distance AS (select DATE(lpep_pickup_datetime), sum(trip_distance) as daily_trip_distance from green_taxi_data group by DATE(lpep_pickup_datetime)) select * from daily_trip_distance order by daily_trip_distance DESC
+
+# 2025-01-25 13:51:56.150539
++with daily_trip_distance AS (select DATE(lpep_pickup_datetime), sum(trip_distance) as daily_trip_distance from green_taxi_data group by DATE(lpep_pickup_datetime)) select * from daily_trip_distance order by daily_trip_distance DESC limit 1
+
+# 2025-01-25 13:52:09.646663
++select count(1) from green_taxi_data
+
+# 2025-01-25 13:52:24.138915
++select distinct date(lpep_pickup_datetime) from green_taxi_data
+
+# 2025-01-25 13:52:34.996379
++select distinct date(lpep_pickup_datetime) from green_taxi_data order by date(lpep_pickup_datetime)
+
+# 2025-01-25 13:53:46.053773
++select date(lpep_pickup_datetime), max(trip_distance) from green_taxi_data group by date(lpep_pickup_datetime) order by date(lpep_pickup_datetime) 
+
+# 2025-01-25 13:54:02.532008
++select date(lpep_pickup_datetime), max(trip_distance) from green_taxi_data group by date(lpep_pickup_datetime) order by max(trip_distance)
+
+# 2025-01-25 13:54:05.554863
++select date(lpep_pickup_datetime), max(trip_distance) from green_taxi_data group by date(lpep_pickup_datetime) order by max(trip_distance) desc
+
+# 2025-01-25 13:54:46.305765
++select * from green_taxi_data
+
+# 2025-01-25 13:54:53.802427
++select * from green_taxi_data limit 5
+
+# 2025-01-25 13:55:02.261036
++\dt
+
+# 2025-01-25 13:55:07.844734
++select * from zones limit 5
+
+# 2025-01-25 13:55:17.547262
++select * from green_taxi_data limit 5;
+
+# 2025-01-25 13:56:01.743007
++\dt
+
+# 2025-01-25 13:56:45.641869
++select * from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID 
+
+# 2025-01-25 13:57:01.888107
++select PULocationID from green_taxi_data
+
+# 2025-01-25 13:57:09.445641
++select "PULocationID" from green_taxi_data
+
+# 2025-01-25 13:57:45.854937
++alter table green_taxi_data rename column "PULocationID" TO PULocationID
+
+# 2025-01-25 13:57:57.532289
++select PULocationID from green_taxi_data
+
+# 2025-01-25 13:58:05.948851
++\d zones
+
+# 2025-01-25 13:58:20.880080
++select * from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID limit 5
+
+# 2025-01-25 13:59:10.465627
++alter table zones rename "LocationID" to LocationID
+
+# 2025-01-25 13:59:14.601605
++select * from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID limit 5
+
+# 2025-01-25 14:01:49.312709
++select z.LocationID, sum(total_amount) from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18)  limit 3
+
+# 2025-01-25 14:02:00.999150
++select z.LocationID, sum(total_amount) from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) group by 1 limit 3
+
+# 2025-01-25 14:02:11.775586
++select * from zones
+
+# 2025-01-25 14:02:46.880934
++select z."Zone", sum(total_amount) from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) group by 1 limit 3
+
+# 2025-01-25 14:03:40.672382
++select z."Zone", sum(total_amount) from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) group by 1 order by sum(total_amount) desc limit 3
+
+# 2025-01-25 14:04:28.893953
++select z."Zone", sum(total_amount) from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) and gtd.total_amount > 13000 group by 1 order by sum(total_amount) desc limit 3
+
+# 2025-01-25 14:04:48.613795
++select total_amount from green_taxi_date
+
+# 2025-01-25 14:04:53.227529
++select total_amount from green_taxi_data
+
+# 2025-01-25 14:08:20.527404
++with filtered_taxi_data as (select * from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18) qualify sum(total_amount) over (partition by date(lpep_pickup_datetime)) > 13000 ) select z."Zone", sum(total_amount) from filtered_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID group by 1 order by sum(total_amount) desc limit 3
+
+# 2025-01-25 14:09:53.445896
++with filtered_taxi_data as (select *, sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18)) > 13000 ) select z."Zone", sum(total_amount) from filtered_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where total_amount_sum > 13000 group by 1 order by sum(total_amount) desc limit 3
+
+# 2025-01-25 14:10:13.465842
++with filtered_taxi_data as (select *, sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18)) select z."Zone", sum(total_amount) from filtered_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where total_amount_sum > 13000 group by 1 order by sum(total_amount) desc limit 3
+
+# 2025-01-25 14:10:32.562976
++with filtered_taxi_data as (select *, sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18)) select z."Zone", sum(total_amount), total_amount_sum from filtered_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where total_amount_sum > 13000 group by 1 order by sum(total_amount) desc limit 3
+
+# 2025-01-25 14:11:00.338132
++with filtered_taxi_data as (select *, sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18)) select z."Zone", total_amount_sum, sum(total_amount) from filtered_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where total_amount_sum > 13000 group by 1, 2 order by sum(total_amount) desc limit 3
+
+# 2025-01-25 14:12:26.573372
++select total_amount, lpep_pickup_datetime, sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data group by 1,2
+
+# 2025-01-25 14:13:16.349960
++select total_amount, lpep_pickup_datetime, sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18) group by 1,2
+
+# 2025-01-25 14:13:58.078893
++select date(lpep_pickup_datetime), sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18) group by 1
+
+# 2025-01-25 14:14:11.238256
++select date(lpep_pickup_datetime), sum(total_amount) over (partition by date(lpep_pickup_datetime)) as total_amount_sum from green_taxi_data where date(lpep_pickup_datetime) = make_date(2019, 10, 18)
+
+# 2025-01-25 14:14:32.443281
++select * from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID limit 5
+
+# 2025-01-25 14:15:01.231754
++select zone, lpep_pickup_datetime, total_amount from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID limit 5
+
+# 2025-01-25 14:15:09.852385
++select Zone, lpep_pickup_datetime, total_amount from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID limit 5
+
+# 2025-01-25 14:15:17.240024
++select z.Zone, lpep_pickup_datetime, total_amount from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID limit 5
+
+# 2025-01-25 14:15:28.736435
++alter table zones rename "Zone" to Zone
+
+# 2025-01-25 14:15:32.753256
++select z.Zone, lpep_pickup_datetime, total_amount from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID limit 5
+
+# 2025-01-25 14:16:08.188990
++select z.Zone, lpep_pickup_datetime, total_amount from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) limit 5
+
+# 2025-01-25 14:16:26.884626
++select z.Zone, lpep_pickup_datetime, total_amount from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) order by Zone limit 5 
+
+# 2025-01-25 14:16:58.349045
++select z.Zone, sum(total_amount) from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) group by 1 order by Zone limit 5 
+
+# 2025-01-25 14:17:11.429399
++select z.Zone, sum(total_amount) from green_taxi_data gtd join zones z on gtd.PULocationID = z.LocationID where date(lpep_pickup_datetime) = make_date(2019, 10, 18) group by 1 order by sum(total_amount) desc limit 5 
+
+# 2025-01-25 14:36:31.895951
++\dt
+
+# 2025-01-25 14:39:19.425621
++select puz.Zone as pick_up_zone, gtd.tip_amount from green_taxi_data gtd join zones puz on gtd.PULocationID = z.LocationID join zones doz on gtd."DOLocationID" = z.LocationID where EXTRACT(YEAR FROM lpep_pickup_datetime) = 2019 and EXTRACT(MONTH FROM lpep_pickup_datetime) = 10 and z.Zone = 'East Harlem North' order by 1 desc limit 5 
+
+# 2025-01-25 14:39:47.110206
++alter table green_taxi_data rename "DOLocationID" to DOLocationID
+
+# 2025-01-25 14:39:52.540007
++select puz.Zone as pick_up_zone, gtd.tip_amount from green_taxi_data gtd join zones puz on gtd.PULocationID = z.LocationID join zones doz on gtd."DOLocationID" = z.LocationID where EXTRACT(YEAR FROM lpep_pickup_datetime) = 2019 and EXTRACT(MONTH FROM lpep_pickup_datetime) = 10 and z.Zone = 'East Harlem North' order by 1 desc limit 5 
+
+# 2025-01-25 14:40:09.487159
++select puz.Zone as pick_up_zone, gtd.tip_amount from green_taxi_data gtd join zones puz on gtd.PULocationID = puz.LocationID join zones doz on gtd."DOLocationID" = doz.LocationID where EXTRACT(YEAR FROM lpep_pickup_datetime) = 2019 and EXTRACT(MONTH FROM lpep_pickup_datetime) = 10 and z.Zone = 'East Harlem North' order by 1 desc limit 5 
+
+# 2025-01-25 14:40:46.401464
++select puz.Zone as pick_up_zone, gtd.tip_amount from green_taxi_data gtd join zones puz on gtd.PULocationID = puz.LocationID join zones doz on gtd.DOLocationID = doz.LocationID where EXTRACT(YEAR FROM lpep_pickup_datetime) = 2019 and EXTRACT(MONTH FROM lpep_pickup_datetime) = 10 and puz.Zone = 'East Harlem North' order by 1 desc limit 5 
+
+# 2025-01-25 14:41:10.346094
++select doz.Zone as drop_off_zone, gtd.tip_amount from green_taxi_data gtd join zones puz on gtd.PULocationID = puz.LocationID join zones doz on gtd.DOLocationID = doz.LocationID where EXTRACT(YEAR FROM lpep_pickup_datetime) = 2019 and EXTRACT(MONTH FROM lpep_pickup_datetime) = 10 and puz.Zone = 'East Harlem North' order by 1 desc limit 5 
+
+# 2025-01-25 14:41:35.945853
++select doz.Zone as drop_off_zone, gtd.tip_amount from green_taxi_data gtd join zones puz on gtd.PULocationID = puz.LocationID join zones doz on gtd.DOLocationID = doz.LocationID where EXTRACT(YEAR FROM lpep_pickup_datetime) = 2019 and EXTRACT(MONTH FROM lpep_pickup_datetime) = 10 and puz.Zone = 'East Harlem North' limit 5 
+
+# 2025-01-25 14:41:46.148359
++select doz.Zone as drop_off_zone, gtd.tip_amount from green_taxi_data gtd join zones puz on gtd.PULocationID = puz.LocationID join zones doz on gtd.DOLocationID = doz.LocationID where EXTRACT(YEAR FROM lpep_pickup_datetime) = 2019 and EXTRACT(MONTH FROM lpep_pickup_datetime) = 10 and puz.Zone = 'East Harlem North' order by tip_amount DESC limit 5 
+
+# 2025-01-25 17:12:49.659793
++exit
