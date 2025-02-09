@@ -1,0 +1,31 @@
+2025/02/01-19:48:04.519 3d1 Reusing MANIFEST /home/ccrocker/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/02/01-19:48:04.527 3d1 Recovering log #14
+2025/02/01-19:48:04.532 3d1 Level-0 table #19: started
+2025/02/01-19:48:04.538 3d1 Level-0 table #19: 2461667 bytes OK
+2025/02/01-19:48:04.539 3d1 Delete type=0 #14
+2025/02/01-19:49:30.658 3ed Level-0 table #22: started
+2025/02/01-19:49:30.666 3ed Level-0 table #22: 898395 bytes OK
+2025/02/01-19:49:30.667 3ed Delete type=0 #20
+2025/02/01-20:33:04.929 3d1 Level-0 table #24: started
+2025/02/01-20:33:04.934 3d1 Level-0 table #24: 24270 bytes OK
+2025/02/01-20:33:04.935 3d1 Delete type=0 #21
+2025/02/01-21:50:04.929 3d1 Level-0 table #26: started
+2025/02/01-21:50:04.934 3d1 Level-0 table #26: 23142 bytes OK
+2025/02/01-21:50:04.935 3d1 Delete type=0 #23
+2025/02/01-21:50:04.935 3d1 Compacting 4@0 + 2@1 files
+2025/02/01-21:50:04.946 3d1 Generated table #27@0: 7 keys, 2461969 bytes
+2025/02/01-21:50:04.957 3d1 Generated table #28@0: 30 keys, 902239 bytes
+2025/02/01-21:50:04.957 3d1 Compacted 4@0 + 2@1 files => 3364208 bytes
+2025/02/01-21:50:04.958 3d1 compacted to: files[ 0 2 1 0 0 0 0 ]
+2025/02/01-21:50:04.959 3d1 Delete type=2 #24
+2025/02/01-21:50:04.959 3d1 Delete type=2 #22
+2025/02/01-21:50:04.959 3d1 Delete type=2 #17
+2025/02/01-21:50:04.959 3d1 Delete type=2 #19
+2025/02/01-21:50:04.959 3d1 Delete type=2 #26
+2025/02/01-21:50:04.959 3d1 Delete type=2 #16
+2025/02/01-23:18:04.930 3d2 Level-0 table #30: started
+2025/02/01-23:18:04.934 3d2 Level-0 table #30: 8164 bytes OK
+2025/02/01-23:18:04.936 3d2 Delete type=0 #25
+2025/02/02-00:40:08.900 3d2 Level-0 table #32: started
+2025/02/02-00:40:08.906 3d2 Level-0 table #32: 23891 bytes OK
+2025/02/02-00:40:08.908 3d2 Delete type=0 #29

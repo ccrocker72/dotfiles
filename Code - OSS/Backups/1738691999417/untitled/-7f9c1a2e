@@ -1,0 +1,4 @@
+untitled:Untitled-1 {"typeId":""}
+- Created a new intermediate model to analyze charging session reliability
+- added relevant SQL logic to compute session metrics including duration, error counts and power metrics
+- Updated yml to incluide new model and its columns with descriptions and test for data integrity

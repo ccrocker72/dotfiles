@@ -1,0 +1,33 @@
+1/31/2025, 2:17:31 PM EST 0: 
+
+----------------------------------------------
+1/31/2025, 2:17:31 PM EST 1: Discord starting: {"releaseChannel":"stable","version":"0.0.82"}, modulepath: /home/ccrocker/.config/discord/0.0.82/modules
+1/31/2025, 2:17:31 PM EST 2: ✅ webContents.created web1 ""
+1/31/2025, 2:17:31 PM EST 3: ✅ window.created win1 "discord"
+1/31/2025, 2:17:31 PM EST 4: ✅ webContents.did-finish-load web1
+1/31/2025, 2:17:35 PM EST 5: ✅ webContents.created web2 ""
+1/31/2025, 2:17:35 PM EST 6: ✅ window.created win2 "Discord"
+1/31/2025, 2:17:37 PM EST 7: ✅ webContents.did-finish-load web2
+1/31/2025, 2:17:37 PM EST 8: window.close win1
+1/31/2025, 2:17:37 PM EST 9: webContents.destroyed web1
+1/31/2025, 2:17:37 PM EST 10: window.closed win1
+1/31/2025, 4:40:22 PM EST 11: window.close win2
+2/1/2025, 7:48:04 PM EST 0: 
+
+----------------------------------------------
+2/1/2025, 7:48:04 PM EST 1: Discord starting: {"releaseChannel":"stable","version":"0.0.82"}, modulepath: /home/ccrocker/.config/discord/0.0.82/modules
+2/1/2025, 7:48:04 PM EST 2: ✅ webContents.created web1 ""
+2/1/2025, 7:48:04 PM EST 3: ✅ window.created win1 "discord"
+2/1/2025, 7:48:05 PM EST 4: ✅ webContents.did-finish-load web1
+2/1/2025, 7:48:05 PM EST 5: ✅ webContents.created web2 ""
+2/1/2025, 7:48:05 PM EST 6: ✅ window.created win2 "Discord"
+2/1/2025, 7:48:07 PM EST 7: ✅ webContents.did-finish-load web2
+2/1/2025, 7:48:07 PM EST 8: window.close win1
+2/1/2025, 7:48:07 PM EST 9: webContents.destroyed web1
+2/1/2025, 7:48:07 PM EST 10: window.closed win1
+2/2/2025, 12:38:23 AM EST 11: window.close win2
+2/2/2025, 12:40:02 AM EST 0: 
+
+----------------------------------------------
+2/2/2025, 12:46:23 AM EST 12: window.close win2
+2/2/2025, 10:58:19 AM EST 13: before-quit

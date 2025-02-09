@@ -1,0 +1,6 @@
+2025-02-01 18:32:07.838 [info] Started local extension host with pid 49825.
+2025-02-01 18:32:11.944 [info] [perf] Render performance baseline is 20ms
+2025-02-01 18:32:13.117 [error] Timed out waiting for authentication provider to register
+2025-02-01 18:35:29.259 [info] Started local extension host with pid 50598.
+2025-02-01 18:35:32.009 [info] [perf] Render performance baseline is 57ms
+2025-02-01 18:35:34.627 [error] Timed out waiting for authentication provider to register

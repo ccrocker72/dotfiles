@@ -1,0 +1,109 @@
+2025-01-28 16:49:24.500 [info] [main] Log level: Info
+2025-01-28 16:49:24.500 [info] [main] Validating found git in: "git"
+2025-01-28 16:49:24.500 [info] [main] Using git "2.48.1" from "git"
+2025-01-28 16:49:24.500 [info] [Model][doInitialScan] Initial repository scan started
+2025-01-28 16:49:24.500 [info] > git rev-parse --show-toplevel [5ms]
+2025-01-28 16:49:24.500 [info] > git rev-parse --git-dir --git-common-dir [33ms]
+2025-01-28 16:49:24.500 [info] [Model][openRepository] Opened repository: /home/ccrocker/resume
+2025-01-28 16:49:24.501 [info] > git rev-parse --show-toplevel [4ms]
+2025-01-28 16:49:24.502 [info] > git config --get commit.template [8ms]
+2025-01-28 16:49:24.510 [info] > git rev-parse --show-toplevel [4ms]
+2025-01-28 16:49:24.513 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-01-28 16:49:24.514 [info] > git rev-parse --show-toplevel [1ms]
+2025-01-28 16:49:24.514 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-01-28 16:49:24.518 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 16:49:24.519 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-01-28 16:49:24.528 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-01-28 16:49:24.789 [info] > git show --textconv :interviews/ChargerHelp!.md [4ms]
+2025-01-28 16:49:24.790 [info] > git ls-files --stage -- /home/ccrocker/resume/interviews/ChargerHelp!.md [2ms]
+2025-01-28 16:49:24.794 [info] > git cat-file -s 70a872ce21d7582ce3e909625aae8d604bd6e766 [1ms]
+2025-01-28 16:49:24.820 [info] > git blame --root --incremental 9b7d8634af7130637f7c9936c4ba9d67bf3e818a -- /home/ccrocker/resume/interviews/ChargerHelp!.md [1ms]
+2025-01-28 16:49:25.005 [info] > git check-ignore -v -z --stdin [1ms]
+2025-01-28 16:49:25.014 [info] > git status -z -uall [492ms]
+2025-01-28 16:49:25.026 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-01-28 16:49:25.030 [info] > git config --local branch.main.vscode-merge-base [1ms]
+2025-01-28 16:49:25.031 [warning] [Git][config] git config failed: Failed to execute git
+2025-01-28 16:49:25.034 [info] > git config --get commit.template [8ms]
+2025-01-28 16:49:25.056 [info] > git reflog main --grep-reflog=branch: Created from *. [22ms]
+2025-01-28 16:49:25.063 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [5ms]
+2025-01-28 16:49:25.066 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-01-28 16:49:25.069 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 16:49:25.069 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [3ms]
+2025-01-28 16:49:25.073 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-01-28 16:49:25.078 [info] > git config --local branch.main.vscode-merge-base origin/main [6ms]
+2025-01-28 16:49:25.079 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms] (cancelled)
+2025-01-28 16:49:25.095 [info] > git status -z -uall [20ms] (cancelled)
+2025-01-28 16:49:25.096 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [14ms]
+2025-01-28 16:49:25.100 [info] > git config --local branch.main.vscode-merge-base [1ms]
+2025-01-28 16:49:25.103 [info] > git config --get commit.template [10ms]
+2025-01-28 16:49:25.104 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2025-01-28 16:49:25.119 [info] > git merge-base refs/heads/main refs/remotes/origin/main [12ms]
+2025-01-28 16:49:25.122 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-01-28 16:49:25.125 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 16:49:25.125 [info] > git diff --name-status -z --diff-filter=ADMR 9b7d8634af7130637f7c9936c4ba9d67bf3e818a...refs/remotes/origin/main [3ms]
+2025-01-28 16:49:25.126 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-01-28 16:49:25.133 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 16:49:25.299 [info] > git status -z -uall [170ms]
+2025-01-28 16:49:26.256 [info] > git ls-files --stage -- /home/ccrocker/resume/interviews/ChargerHelp!.md [1ms]
+2025-01-28 16:49:26.261 [info] > git cat-file -s 70a872ce21d7582ce3e909625aae8d604bd6e766 [1ms]
+2025-01-28 16:49:26.266 [info] > git show --textconv :interviews/ChargerHelp!.md [1ms]
+2025-01-28 16:58:54.320 [info] > git config --get commit.template [3ms]
+2025-01-28 16:58:54.321 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-01-28 16:58:54.323 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 16:58:54.324 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-01-28 16:58:54.330 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 16:58:54.491 [info] > git status -z -uall [164ms]
+2025-01-28 17:07:25.049 [info] > git config --get commit.template [3ms]
+2025-01-28 17:07:25.049 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [0ms]
+2025-01-28 17:07:25.052 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:07:25.053 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-01-28 17:07:25.059 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:07:25.226 [info] > git status -z -uall [171ms]
+2025-01-28 17:08:36.719 [info] > git config --get commit.template [10ms]
+2025-01-28 17:08:36.719 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-01-28 17:08:36.722 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:08:36.722 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-01-28 17:08:36.729 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [0ms]
+2025-01-28 17:08:36.891 [info] > git status -z -uall [166ms]
+2025-01-28 17:08:41.912 [info] > git config --get commit.template [4ms]
+2025-01-28 17:08:41.913 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-01-28 17:08:41.916 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:08:41.916 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-01-28 17:08:41.923 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:08:42.091 [info] > git status -z -uall [172ms]
+2025-01-28 17:09:35.967 [info] > git config --get commit.template [3ms]
+2025-01-28 17:09:35.967 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-01-28 17:09:35.970 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:09:35.970 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-01-28 17:09:35.977 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:09:36.141 [info] > git status -z -uall [168ms]
+2025-01-28 17:11:54.777 [info] > git config --get commit.template [3ms]
+2025-01-28 17:11:54.777 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [0ms]
+2025-01-28 17:11:54.780 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:11:54.781 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-01-28 17:11:54.787 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:11:54.948 [info] > git status -z -uall [165ms]
+2025-01-28 17:12:06.614 [info] > git config --get commit.template [3ms]
+2025-01-28 17:12:06.614 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-01-28 17:12:06.617 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:12:06.617 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-01-28 17:12:06.624 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:12:06.787 [info] > git status -z -uall [167ms]
+2025-01-28 17:12:55.515 [info] > git config --get commit.template [4ms]
+2025-01-28 17:12:55.515 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-01-28 17:12:55.518 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:12:55.519 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-01-28 17:12:55.526 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:12:55.691 [info] > git status -z -uall [169ms]
+2025-01-28 17:13:39.158 [info] > git config --get commit.template [3ms]
+2025-01-28 17:13:39.159 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-01-28 17:13:39.161 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:13:39.162 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-01-28 17:13:39.169 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:13:39.330 [info] > git status -z -uall [165ms]
+2025-01-28 17:15:06.622 [info] > git config --get commit.template [4ms]
+2025-01-28 17:15:06.622 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-01-28 17:15:06.625 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ccrocker/resume/.git/refs/remotes/origin/main'
+2025-01-28 17:15:06.625 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-01-28 17:15:06.632 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-01-28 17:15:06.797 [info] > git status -z -uall [169ms]

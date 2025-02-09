@@ -1,0 +1,64 @@
+2025-02-02 15:44:22.271 [info] [main] Log level: Info
+2025-02-02 15:44:22.271 [info] [main] Validating found git in: "git"
+2025-02-02 15:44:22.271 [info] [main] Using git "2.48.1" from "git"
+2025-02-02 15:44:22.271 [info] [Model][doInitialScan] Initial repository scan started
+2025-02-02 15:44:22.271 [info] > git rev-parse --show-toplevel [4ms]
+2025-02-02 15:44:22.271 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-02-02 15:44:22.271 [info] [Model][openRepository] Opened repository: /home/ccrocker/de_zoomcamp
+2025-02-02 15:44:22.302 [info] > git rev-parse --show-toplevel [24ms]
+2025-02-02 15:44:22.303 [info] > git config --get commit.template [28ms]
+2025-02-02 15:44:22.321 [info] > git rev-parse --show-toplevel [9ms]
+2025-02-02 15:44:22.325 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-02-02 15:44:22.327 [info] > git rev-parse --show-toplevel [3ms]
+2025-02-02 15:44:22.327 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-02-02 15:44:22.334 [info] > git status -z -uall [3ms]
+2025-02-02 15:44:22.335 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-02-02 15:44:22.344 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-02-02 15:44:22.349 [info] > git config --local branch.main.vscode-merge-base [1ms]
+2025-02-02 15:44:22.352 [info] > git config --get commit.template [8ms]
+2025-02-02 15:44:22.379 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [26ms]
+2025-02-02 15:44:22.391 [info] > git merge-base refs/heads/main refs/remotes/origin/main [9ms]
+2025-02-02 15:44:22.394 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [17ms]
+2025-02-02 15:44:22.396 [info] > git diff --name-status -z --diff-filter=ADMR 9d7f9b43e5d263128210d6f2d0f88c4b78cb4670...refs/remotes/origin/main [2ms]
+2025-02-02 15:44:22.412 [info] > git status -z -uall [13ms]
+2025-02-02 15:44:22.412 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [11ms]
+2025-02-02 15:44:22.605 [info] > git show --textconv :02-workflow-orchestration/README.md [7ms]
+2025-02-02 15:44:22.606 [info] > git ls-files --stage -- /home/ccrocker/de_zoomcamp/02-workflow-orchestration/README.md [2ms]
+2025-02-02 15:44:22.614 [info] > git cat-file -s ebaae85bc38647431065a885b666fc77fa344bd4 [2ms]
+2025-02-02 15:44:22.808 [info] > git check-ignore -v -z --stdin [1ms]
+2025-02-02 15:44:46.816 [info] [main] Log level: Info
+2025-02-02 15:44:46.816 [info] [main] Validating found git in: "git"
+2025-02-02 15:44:46.816 [info] [main] Using git "2.48.1" from "git"
+2025-02-02 15:44:46.816 [info] [Model][doInitialScan] Initial repository scan started
+2025-02-02 15:44:46.816 [info] > git rev-parse --show-toplevel [20ms]
+2025-02-02 15:44:46.819 [info] > git rev-parse --git-dir --git-common-dir [0ms]
+2025-02-02 15:44:46.826 [info] [Model][openRepository] Opened repository: /home/ccrocker/resume
+2025-02-02 15:44:46.834 [info] > git rev-parse --show-toplevel [1ms]
+2025-02-02 15:44:46.835 [info] > git config --get commit.template [5ms]
+2025-02-02 15:44:46.862 [info] > git rev-parse --show-toplevel [12ms]
+2025-02-02 15:44:46.863 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-02-02 15:44:46.864 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-02 15:44:46.872 [info] > git status -z -uall [5ms]
+2025-02-02 15:44:46.873 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-02 15:44:46.885 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-02-02 15:44:46.889 [info] > git config --local branch.main.vscode-merge-base [1ms]
+2025-02-02 15:44:46.892 [info] > git config --get commit.template [9ms]
+2025-02-02 15:44:46.916 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [24ms]
+2025-02-02 15:44:46.928 [info] > git merge-base refs/heads/main refs/remotes/origin/main [9ms]
+2025-02-02 15:44:46.931 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [15ms]
+2025-02-02 15:44:46.933 [info] > git diff --name-status -z --diff-filter=ADMR e1f27a2badcfbefe3b0a1bfaee926f64a76f3b25...refs/remotes/origin/main [2ms]
+2025-02-02 15:44:46.946 [info] > git status -z -uall [10ms]
+2025-02-02 15:44:46.946 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2025-02-02 15:44:49.478 [info] > git check-ignore -v -z --stdin [5ms]
+2025-02-02 15:44:52.021 [info] > git show --textconv :interviews/ChargerHelp!.md [5ms]
+2025-02-02 15:44:52.029 [info] > git ls-files --stage -- /home/ccrocker/resume/interviews/ChargerHelp!.md [9ms]
+2025-02-02 15:44:52.035 [info] > git cat-file -s 501ba1e69a4021c33b8f73cd1873de9fcf851924 [2ms]
+2025-02-02 15:44:52.104 [info] > git blame --root --incremental e1f27a2badcfbefe3b0a1bfaee926f64a76f3b25 -- /home/ccrocker/resume/interviews/ChargerHelp!.md [6ms]
+2025-02-02 16:11:28.232 [info] > git config --get commit.template [4ms]
+2025-02-02 16:11:28.232 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-02-02 16:11:28.241 [info] > git status -z -uall [6ms]
+2025-02-02 16:11:28.242 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-02-04 12:38:25.512 [info] > git config --get commit.template [9ms]
+2025-02-04 12:38:25.512 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-02-04 12:38:25.526 [info] > git status -z -uall [7ms]
+2025-02-04 12:38:25.527 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
